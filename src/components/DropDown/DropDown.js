@@ -16,7 +16,7 @@ export class DropDown extends Component {
       this.setState({ isOpen: true });
     }
   };
-  onOpionClicked = (option) => {
+  onOptionClicked = (option) => {
     let getLanguage = this.props.getLanguage;
     if (!this.state.isChoosenOption) {
       this.setState(
@@ -65,7 +65,7 @@ export class DropDown extends Component {
                 key={option}
                 className="drop-down-list__item"
                 onClick={() => {
-                  this.onOpionClicked(option);
+                  this.onOptionClicked(option);
                 }}
               >
                 {option}
